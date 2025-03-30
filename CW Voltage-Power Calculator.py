@@ -59,7 +59,7 @@ class DataEntryForm(ttk.Frame):
         lbl = ttk.Label(master=container, text=label, width=10)
         lbl.pack(side=LEFT, padx=5)
 
-        # Validation function
+        # validation function
         def validate_input(value):
             if value == "" or self.is_valid_number(value):
                 ent.configure(bootstyle="default")  # reset to default style
@@ -68,10 +68,10 @@ class DataEntryForm(ttk.Frame):
                 ent.configure(bootstyle="danger")  # set red outline
                 return False
 
-        # Register the validation function
+        # register the validation function
         validate_cmd = self.register(validate_input)
 
-        # Entry field with validation
+        # entry field with validation
         ent = ttk.Entry(
             master=container,
             textvariable=variable,
@@ -164,8 +164,7 @@ class DataEntryForm(ttk.Frame):
                 self.mw.set(f"{mw:.6g}")
 
         except ValueError:
-            #print("Invalid input. Please enter numeric values.")
-            pass
+            pass # do nothing
 
     def on_clear(self):
         # clear all data entry fields 
