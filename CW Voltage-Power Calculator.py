@@ -82,7 +82,11 @@ class DataEntryForm(ttk.Frame):
 
     def is_valid_number(self, value):
         # check if the value is a valid number
-        if value == "." or "-": # ok to start with a decimal point or minus sign
+        if value == "-": # ok to start with a minus sign
+            return True
+        elif value == ".": # ok to start with a decimal point 
+            return True
+        elif value == "-.": # ok to start with a minus sign and decimal point
             return True
         try:
             float(value)  # try converting to a float
