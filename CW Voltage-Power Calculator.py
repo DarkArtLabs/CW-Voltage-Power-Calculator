@@ -52,15 +52,41 @@ class DataEntryForm(ttk.Frame):
         self.modified_field = field_name
 
     def create_form_entry(self, label, variable):
-        # single entry field with label
+        """Create a single form entry with validation."""
         container = ttk.Frame(self)
         container.pack(fill=X, expand=YES, pady=5)
 
         lbl = ttk.Label(master=container, text=label, width=10)
         lbl.pack(side=LEFT, padx=5)
 
-        ent = ttk.Entry(master=container, textvariable=variable)
+        # Validation function
+        def validate_input(value):
+            if value == "" or self.is_valid_number(value):
+                ent.configure(bootstyle="default")  # Reset to default style
+                return True
+            else:
+                ent.configure(bootstyle="danger")  # Apply red outline
+                return False
+
+        # Register the validation function
+        validate_cmd = self.register(validate_input)
+
+        # Entry field with validation
+        ent = ttk.Entry(
+            master=container,
+            textvariable=variable,
+            validate="key",
+            validatecommand=(validate_cmd, "%P"),  # %P passes the current value of the entry
+        )
         ent.pack(side=LEFT, padx=5, fill=X, expand=YES)
+
+    def is_valid_number(self, value):
+        """Check if the input is a valid number."""
+        try:
+            float(value)  # Try converting to a float
+            return True
+        except ValueError:
+            return False
 
     def create_buttonbox(self):
         # button box and impedance entry field
