@@ -5,7 +5,7 @@
 # The user may change any value after the initial calculation and the program will recalculate the other values
 # without needing to clear the fields beforehand.
 # The user may also enter an impedance value, which defaults to 50 Ohms.
-# The application uses the tk and ttkbootstrap libraries for styling and layout.
+# The application uses the tkinter and ttkbootstrap libraries for styling and layout.
 # The math library is used for logarithmic and square root calculations.
 #
 # 30 March 2024
