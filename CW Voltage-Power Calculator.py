@@ -52,7 +52,7 @@ class DataEntryForm(ttk.Frame):
         self.modified_field = field_name
 
     def create_form_entry(self, label, variable):
-        """Create a single form entry with validation."""
+        # entry field with labels and validation
         container = ttk.Frame(self)
         container.pack(fill=X, expand=YES, pady=5)
 
@@ -82,10 +82,10 @@ class DataEntryForm(ttk.Frame):
 
     def is_valid_number(self, value):
         # check if the value is a valid number
-        if value == ".":
+        if value == ".": # ok to start with a decimal point
             return True
         try:
-            float(value)  # Try converting to a float
+            float(value)  # try converting to a float
             return True
         except ValueError:
             return False
