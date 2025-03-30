@@ -62,10 +62,10 @@ class DataEntryForm(ttk.Frame):
         # Validation function
         def validate_input(value):
             if value == "" or self.is_valid_number(value):
-                ent.configure(bootstyle="default")  # Reset to default style
+                ent.configure(bootstyle="default")  # reset to default style
                 return True
             else:
-                ent.configure(bootstyle="danger")  # Apply red outline
+                ent.configure(bootstyle="danger")  # set red outline
                 return False
 
         # Register the validation function
