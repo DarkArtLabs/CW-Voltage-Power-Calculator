@@ -1,4 +1,4 @@
-# CW Voltage-Power Calculator
+# CW Voltage-Power Calculator (CWVPC)
 Simple GUI application that allows the user to enter a value for either Vpp, Vrms, mW, or dBm of a CW signal and the program will calculate the other three values based on the entered value.
 
 User is able to select impedance value, with a default of 50 Ohms.
