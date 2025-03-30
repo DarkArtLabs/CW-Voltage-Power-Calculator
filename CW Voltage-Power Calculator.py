@@ -151,7 +151,7 @@ class DataEntryForm(ttk.Frame):
 
 if __name__ == "__main__":
     app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False))
-    icon = tk.PhotoImage(file="D:\Projects\CW Voltage-Power Calculator\icon.png") # this path will need to be changed
+    icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # this path will need to be changed
     app.iconphoto(False, icon)
     ttk.Window.place_window_center(app) 
     DataEntryForm(app)
