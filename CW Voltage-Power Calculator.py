@@ -81,7 +81,9 @@ class DataEntryForm(ttk.Frame):
         ent.pack(side=LEFT, padx=5, fill=X, expand=YES)
 
     def is_valid_number(self, value):
-        """Check if the input is a valid number."""
+        # check if the value is a valid number
+        if value == ".":
+            return True
         try:
             float(value)  # Try converting to a float
             return True
