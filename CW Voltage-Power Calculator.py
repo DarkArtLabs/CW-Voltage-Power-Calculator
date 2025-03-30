@@ -9,7 +9,7 @@
 # The math library is used for logarithmic and square root calculations.
 #
 # 30 March 2024
-# GS
+# GSi
 
 import math
 import tkinter as tk
