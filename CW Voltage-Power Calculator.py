@@ -217,10 +217,10 @@ def apply_theme_to_titlebar(root):
 
 if __name__ == "__main__":
     app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False))
-    #icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # this path will need to be changed
-    #app.iconphoto(False, icon)
-    icon_path = resource_path("icon.png") 
-    app.iconphoto(False, tk.PhotoImage(file=icon_path))
+    #icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # use this if running as python script
+    #app.iconphoto(False, icon) # use this if running as python script
+    icon_path = resource_path("icon.png") # use this if running as .exe
+    app.iconphoto(False, tk.PhotoImage(file=icon_path)) # use this if running as .exe
     ttk.Window.place_window_center(app) 
     DataEntryForm(app)
 
