@@ -16,8 +16,6 @@ Features
 - Able to change any value and re-calculate without clearing form
 - Light and dark mode versions (selectable at compile time)
 
-An real impedance value may be set, with a default of 50 Ohms.
-
 Ready to be complied using auto-py-to-exe with included icons. Edit line 154 to set path of icon.png before compiling.
 
 Reccomend compiling as "single-file" which results in 30kB executible.
