@@ -1,7 +1,9 @@
 # CW Voltage-Power Calculator (CWVPC)
 Simple GUI application that allows the user to enter a value for either Vpp, Vrms, mW, or dBm of a CW signal and the program will calculate the other three values based on the entered value.
 
-![GUI1](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/GUI1.png)
+<p align="center">
+  <img width="364" height="296" src="[https://picsum.photos/460/300](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/GUI1.png)">
+</p>
 
 
 ![GUI2](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/GUI2.png)
