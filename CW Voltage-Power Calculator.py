@@ -15,6 +15,7 @@
 import os
 import sys
 import math
+import pywinstyles
 import tkinter as tk
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
@@ -183,7 +184,6 @@ class DataEntryForm(ttk.Frame):
         self.dbm.set("")
         self.modified_field = None  # reset the modified field
 
-
 def resource_path(relative_path):
     # get absolute path to icon resource
     try:
@@ -194,6 +194,27 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
+# sets the theme for the title bar
+def apply_theme_to_titlebar(root):
+    version = sys.getwindowsversion()
+
+    # uncomment the lines below to set the title bar color to match the theme
+
+    if version.major == 10 and version.build >= 22000:
+        # set dark title bar
+        pywinstyles.change_header_color(root, "#1c1c1c")
+        # set light title bar
+        #pywinstyles.change_header_color(root, "#fafafa")
+    elif version.major == 10:
+        # set dark title bar
+        pywinstyles.apply_style(root, "dark")
+        # set light title bar
+        #pywinstyles.apply_style(root, "normal")
+
+        # A hacky way to update the title bar's color on Windows 10 (it doesn't update instantly like on Windows 11)
+        root.wm_attributes("-alpha", 0.99)
+        root.wm_attributes("-alpha", 1)
+
 if __name__ == "__main__":
     app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False))
     #icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # this path will need to be changed
@@ -202,4 +223,8 @@ if __name__ == "__main__":
     app.iconphoto(False, tk.PhotoImage(file=icon_path))
     ttk.Window.place_window_center(app) 
     DataEntryForm(app)
+
+    # apply theme to the title bar
+    apply_theme_to_titlebar(app)
+
     app.mainloop()
