@@ -6,7 +6,9 @@ Simple GUI application that allows the user to enter a value for either Vpp, Vrm
 </p>
 
 
-![GUI2](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/GUI2.png)
+<p align="center">
+  <img width="364" height="296" src="https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/GUI2.png">
+</p>
 
 User is able to select impedance value, with a default of 50 Ohms.
 
