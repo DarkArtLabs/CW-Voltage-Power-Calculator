@@ -7,10 +7,13 @@
 # The user may also enter an impedance value, which defaults to 50 Ohms.
 # The application uses the tkinter and ttkbootstrap libraries for styling and layout.
 # The math library is used for logarithmic and square root calculations.
+# OS and sys libraries are used for packaging icons with auto-py-to-exe.
 #
 # 30 March 2024
 # GS
 
+import os
+import sys
 import math
 import tkinter as tk
 import ttkbootstrap as ttk
@@ -180,10 +183,23 @@ class DataEntryForm(ttk.Frame):
         self.dbm.set("")
         self.modified_field = None  # reset the modified field
 
+
+def resource_path(relative_path):
+    # get absolute path to icon resource
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 if __name__ == "__main__":
     app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False))
-    icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # this path will need to be changed
-    app.iconphoto(False, icon)
+    #icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # this path will need to be changed
+    #app.iconphoto(False, icon)
+    icon_path = resource_path("icon.png") 
+    app.iconphoto(False, tk.PhotoImage(file=icon_path))
     ttk.Window.place_window_center(app) 
     DataEntryForm(app)
     app.mainloop()
