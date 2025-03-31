@@ -18,4 +18,4 @@ Features
 
 Ready to be complied using auto-py-to-exe with included icons.
 
-Reccomend compiling as "single-file" which results in 30kB executible.
+Reccomend compiling as "single-file" which results in 30MB executible.
