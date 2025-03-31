@@ -8,6 +8,10 @@
 # The application uses the tkinter and ttkbootstrap libraries for styling and layout.
 # The math library is used for logarithmic and square root calculations.
 # OS and sys libraries are used for packaging icons with auto-py-to-exe.
+# The pywinstyles library is used to change the title bar color on Windows 10 and 11.
+# The application is designed to be run as a standalone executable using auto-py-to-exe.
+#
+# Written and tested with Python 3.11.4
 #
 # 30 March 2024
 # GS
