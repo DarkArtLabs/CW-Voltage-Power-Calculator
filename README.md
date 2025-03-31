@@ -10,11 +10,11 @@ Simple GUI application that allows the user to enter a value for either Vpp, Vrm
 </p>
 
 Features
--Reliable and accurate calculations
--Failsafe design will not report inccorect results
--May enter arbitrary impedance value (defaults to 50 Ohms)
--Able to change any value and re-calculate without clearing form
--Light and dark mode versions (selectable at compile time)
+- Reliable and accurate calculations
+- Failsafe design will not report inccorect results
+- May enter arbitrary impedance value (defaults to 50 Ohms)
+- Able to change any value and re-calculate without clearing form
+- Light and dark mode versions (selectable at compile time)
 
 An real impedance value may be set, with a default of 50 Ohms.
 
