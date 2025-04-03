@@ -5,7 +5,7 @@ Tested with Python 3.11.4
 
    https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/archive/refs/tags/v0.1.1.zip
 
-2. Edit the Python source file to set light mode, or leave as is for dark mode.
+2. For light mode:
 
    - Comment out lines 209/214 and uncomment lines 211/216
   
