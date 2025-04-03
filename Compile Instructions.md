@@ -33,13 +33,13 @@ Tested with Python 3.11.4
   <img width="636" height="619" src="https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/auto-py-to-exe1.png">
 </p>
 
-11. In the Advanced tab, Windows specific options, set the version file option to point to the "VERSION" file,
+11. In the Advanced tab, Windows specific options, set the version file option to point to the "VERSION" file (optional).
 
 <p align="center">
   <img width="636" height="619" src="https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/blob/main/Documentation/auto-py-to-exe2.png">
 </p>
 
-13. In the Settings tab, auto-py-to-exe specific options, set the output directory as desired.
+13. In the Settings tab, under auto-py-to-exe specific options, set the output directory as desired.
 
 14. Press the large blue "CONVERT .PY TO .EXE" button at the very bottom of the form and wait the approximately 60 seconds for the program to compile and generate an executable.
 
