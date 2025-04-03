@@ -1,6 +1,5 @@
 # CW Voltage-Power Calculator Compile Instructions
-## Tested with Python 3.11.4
-## Using auto-py-to-exe
+Tested with Python 3.11.4
 
 1. Install auto-py-to-exe
 
