@@ -17,7 +17,6 @@ Dark Mode: ![CWVPCd.exe](https://github.com/DarkArtLabs/CW-Voltage-Power-Calcula
 
 # Features
 - Reliable and accurate calculations
-- Failsafe design will not report incorrect results
 - May enter arbitrary impedance values (defaults to 50 Ohms)
 - Able to change any value and re-calculate without clearing form
 - Light and dark mode (selectable at compile time)
