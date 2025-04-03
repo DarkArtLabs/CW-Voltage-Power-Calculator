@@ -220,7 +220,8 @@ def apply_theme_to_titlebar(root):
         root.wm_attributes("-alpha", 1)
 
 if __name__ == "__main__":
-    app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False))
+    app = ttk.Window("CW Voltage-Power Calculator", "darkly", resizable=(False, False)) # darkly for dark theme, cosmo for light theme
+
     #icon = tk.PhotoImage(file="D:\Projects\CW-Voltage-Power-Calculator\icon.png") # use this if running as python script
     #app.iconphoto(False, icon) # use this if running as python script
     icon_path = resource_path("icon.png") # use this if running as .exe
@@ -228,7 +229,7 @@ if __name__ == "__main__":
     ttk.Window.place_window_center(app) 
     DataEntryForm(app)
 
-    # apply theme to the title bar
+    # apply dark theme to the title bar
     apply_theme_to_titlebar(app)
 
     app.mainloop()
