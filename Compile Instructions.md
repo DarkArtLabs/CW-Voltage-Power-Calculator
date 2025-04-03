@@ -25,7 +25,7 @@ Tested with Python 3.11.4
 
    `auto-py-to-exe`
 
-5. Set the script location to point to CW Voltage-Power Calculator.py
+5. Set the script location to point to CW Voltage-Power Calculator.py.
 
 6. Set the Onefile option to "One File".
 
