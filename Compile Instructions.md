@@ -7,6 +7,10 @@ Tested with Python 3.11.4
 
 2. Edit the Python source file to set light mode, or leave as is for dark mode.
 
+   - Comment out lines 209/214 and uncomment lines 211/216
+  
+   - Change "darkly" to "cosmo" on line 223
+
 3. Install Python dependencies (these are used by the program to perform its function).
 
    `pip install pywinstyles`
