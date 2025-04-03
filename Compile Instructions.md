@@ -11,7 +11,7 @@ Tested with Python 3.11.4
   
    - Change "darkly" to "cosmo" on line 223
 
-3. Install Python dependencies (these are used by the program to perform its function).
+3. Install Python dependencies.
 
    `pip install pywinstyles`
    
@@ -19,7 +19,7 @@ Tested with Python 3.11.4
    
    `pip install ttkbootstrap`
 
-4. Install and launch auto-py-to-exe (this is the compiler).
+4. Install and launch auto-py-to-exe.
 
    `pip install auto-py-to-exe`
 
