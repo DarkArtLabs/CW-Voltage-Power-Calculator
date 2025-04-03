@@ -5,6 +5,8 @@ Tested with Python 3.11.4
 
    https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/archive/refs/tags/v0.1.1.zip
 
+2. Edit the Python source file to set light mode, or leave as is for dark mode.
+
 3. Install Python dependencies (these are used by the program to perform its function).
 
    `pip install pywinstyles`
