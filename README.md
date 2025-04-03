@@ -12,6 +12,7 @@ Simple GUI application that allows the user to enter a value for either Vpp, Vrm
 # Downloads
 
 Light Mode: ![CWVPCl.exe](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/releases/download/v0.1.1/CWVPCl.exe)
+
 Dark Mode: ![CWVPCd.exe](https://github.com/DarkArtLabs/CW-Voltage-Power-Calculator/releases/download/v0.1.1/CWVPCd.exe)
 
 # Features
