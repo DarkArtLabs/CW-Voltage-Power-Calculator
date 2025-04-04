@@ -31,7 +31,7 @@ Tested with Python 3.11.4
 
 7. Set the Console Window option to "Window Based (hide the console)".
 
-8. Set the option to point to the icon.ico file.
+8. Set the icon option to point to the icon.ico file.
 
 9. Add the icon.png as an additional file, keep the default location of "."
 
